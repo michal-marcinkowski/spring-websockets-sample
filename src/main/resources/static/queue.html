@@ -16,9 +16,10 @@
             }
 
             function connect() {
+                var headers = { login: "andrzej_dupa" }
                 var socket = new SockJS('/queue');
                 stompClient = Stomp.over(socket);
-                stompClient.connect({}, function(frame) {
+                stompClient.connect(headers, function(frame) {
                     setConnected(true);
                     console.log('Connected: ' + frame);
                     var url = stompClient.ws._transport.url;

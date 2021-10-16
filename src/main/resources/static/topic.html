@@ -15,6 +15,7 @@
             }
 
             function connect() {
+                var headers = { login: "andrzej_dupa" }
                 var socket = new SockJS('/chat');
                 stompClient = Stomp.over(socket);
                 stompClient.connect({}, function(frame) {
