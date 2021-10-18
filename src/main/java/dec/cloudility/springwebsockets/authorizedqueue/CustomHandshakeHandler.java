@@ -1,4 +1,4 @@
-package dec.cloudility.springwebsockets.queue;
+package dec.cloudility.springwebsockets.authorizedqueue;
 
 import org.springframework.context.annotation.Profile;
 import org.springframework.http.server.ServerHttpRequest;
@@ -9,7 +9,7 @@ import java.security.Principal;
 import java.util.Map;
 import java.util.UUID;
 
-@Profile("queue")
+@Profile("authorized-queue")
 @Component
 public class CustomHandshakeHandler extends DefaultHandshakeHandler {
 

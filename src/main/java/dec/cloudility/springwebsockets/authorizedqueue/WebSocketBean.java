@@ -1,4 +1,4 @@
-package dec.cloudility.springwebsockets.queue;
+package dec.cloudility.springwebsockets.authorizedqueue;
 
 import org.springframework.context.annotation.Profile;
 import org.springframework.context.annotation.Scope;
@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
 
 import java.util.concurrent.atomic.AtomicLong;
 
-@Profile("queue")
+@Profile("authorized-queue")
 @Component
 @Scope(scopeName = "websocket", proxyMode = ScopedProxyMode.TARGET_CLASS)
 public class WebSocketBean {

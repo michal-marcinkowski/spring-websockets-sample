@@ -1,4 +1,4 @@
-package dec.cloudility.springwebsockets.queue;
+package dec.cloudility.springwebsockets.authorizedqueue;
 
 
 import lombok.extern.slf4j.Slf4j;
@@ -10,7 +10,7 @@ import org.springframework.messaging.support.ChannelInterceptor;
 import org.springframework.messaging.support.MessageHeaderAccessor;
 import org.springframework.stereotype.Component;
 
-@Profile("queue")
+@Profile("authorized-queue")
 @Slf4j
 @Component
 public class LoggingChannelInterceptor implements ChannelInterceptor {
